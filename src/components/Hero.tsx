@@ -58,10 +58,10 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 font-semibold flex items-center justify-center space-x-2">
+              <a href="#paket" className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 font-semibold flex items-center justify-center space-x-2">
                 <span>Lihat Paket Harga</span>
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </a>
               <button className="group border-2 border-purple-400 text-purple-400 px-8 py-4 rounded-full hover:bg-purple-400 hover:text-white transition-all duration-300 font-semibold flex items-center justify-center space-x-2">
                 <Play className="h-5 w-5" />
                 <span>Demo Video</span>

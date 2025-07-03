@@ -43,7 +43,7 @@ const Navbar = () => {
                   ? 'text-white drop-shadow-lg'
                   : 'bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent'
               }`}>
-                StreamPro
+                Zhillan Azmi
               </h1>
               <p className="text-xs text-gray-400">Premium Digital Store</p>
             </div>

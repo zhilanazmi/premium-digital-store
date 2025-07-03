@@ -7,25 +7,25 @@ const Footer = () => {
     {
       icon: <Phone className="h-5 w-5" />,
       title: 'WhatsApp',
-      info: '+62 812-3456-7890',
+      info: '+62 851-5961-6116',
       action: 'Chat Sekarang'
     },
     {
       icon: <Mail className="h-5 w-5" />,
       title: 'Email',
-      info: 'hello@streampro.id',
+      info: 'jilaann@sgbteam.id',
       action: 'Kirim Email'
     },
     {
       icon: <Clock className="h-5 w-5" />,
       title: 'Jam Operasional',
-      info: '24/7 Customer Support',
+      info: '09.00 - 22.00',
       action: ''
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       title: 'Lokasi',
-      info: 'Jakarta, Indonesia',
+      info: 'Bandung, Indonesia',
       action: ''
     }
   ]
@@ -41,23 +41,20 @@ const Footer = () => {
   const services = [
     'Netflix Premium',
     'Spotify Premium',
-    'Disney+ Hotstar',
-    'YouTube Premium',
-    'Amazon Prime Video',
-    'Apple Music'
+    'YouTube Premium'
   ]
 
   const socialLinks = [
     {
       name: 'Instagram',
       icon: <Instagram className="h-5 w-5" />,
-      href: '#',
+      href: 'https://www.instagram.com/zhilanazmi',
       color: 'hover:text-pink-400'
     },
     {
       name: 'WhatsApp',
       icon: <MessageCircle className="h-5 w-5" />,
-      href: '#',
+      href: 'https://wa.me/6285159616116',
       color: 'hover:text-green-400'
     },
     {
@@ -179,7 +176,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <h1 className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    StreamPro
+                    Zhillan Azmi
                   </h1>
                   <p className="text-xs text-gray-400">Premium Digital Store</p>
                 </div>
