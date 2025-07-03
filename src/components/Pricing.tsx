@@ -11,25 +11,22 @@ const Pricing = () => {
         'Streaming 4K Ultra HD',
         'Tanpa iklan',
         'Download unlimited',
-        'Multi device (4 layar)',
         'Garansi 30 hari'
       ],
       popular: false
     },
     {
       duration: '2 Bulan',
-      price: 'Rp 70.000',
+      price: 'Rp 65.000',
       originalPrice: 'Rp 108.000',
-      discount: '35%',
+      discount: '40%',
       features: [
         'Streaming 4K Ultra HD',
         'Tanpa iklan',
         'Download unlimited',
-        'Multi device (4 layar)',
-        'Garansi 60 hari',
-        'Bonus 1 minggu gratis'
+        'Garansi 60 hari'
       ],
-      popular: true
+      popular: false
     },
     {
       duration: '3 Bulan',
@@ -40,12 +37,10 @@ const Pricing = () => {
         'Streaming 4K Ultra HD',
         'Tanpa iklan',
         'Download unlimited',
-        'Multi device (4 layar)',
         'Garansi 90 hari',
-        'Bonus 2 minggu gratis',
         'Priority support'
       ],
-      popular: false
+      popular: true
     }
   ]
 
@@ -137,13 +132,13 @@ const Pricing = () => {
                 </ul>
 
                 {/* CTA Button */}
-                <button className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 ${
+                <a href="https://wa.me/6285159616116" target="_blank" rel="noopener noreferrer" className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center ${
                   plan.popular
                     ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600'
                     : 'bg-white/10 text-white hover:bg-white/20 border border-purple-500/30'
                 }`}>
                   Beli Sekarang
-                </button>
+                </a>
               </div>
             ))}
           </div>
@@ -198,9 +193,14 @@ const Pricing = () => {
               </div>
 
               {/* CTA Button */}
-              <button className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white py-4 rounded-xl font-semibold hover:from-green-600 hover:to-emerald-600 transition-all duration-300 text-lg">
+              <a 
+                href="https://wa.me/6285159616116" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white py-4 rounded-xl font-semibold hover:from-green-600 hover:to-emerald-600 transition-all duration-300 text-lg inline-block text-center"
+              >
                 Ambil Paket Spotify
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -214,9 +214,14 @@ const Pricing = () => {
             <p className="text-gray-300 mb-6">
               Tim kami siap membantu Anda memilih paket yang tepat sesuai kebutuhan
             </p>
-            <button className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-3 rounded-full hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 font-semibold">
+            <a 
+              href="https://wa.me/6285159616116" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-3 rounded-full hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 font-semibold inline-block"
+            >
               Konsultasi Gratis
-            </button>
+            </a>
           </div>
         </div>
       </div>

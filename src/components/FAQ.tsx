@@ -6,44 +6,38 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: 'Apakah akun yang dijual legal dan aman?',
-      answer: 'Ya, 100% legal dan aman! Semua akun yang kami jual adalah akun resmi yang diperoleh melalui metode yang sah. Kami bekerja sama dengan distributor resmi dan menggunakan metode pembayaran yang legal. Akun dijamin tidak akan di-suspend atau di-block.'
+      question: 'Bagaimana cara pembayaran yang tersedia?',
+      answer: 'Kami menerima berbagai metode pembayaran: Transfer Bank (BCA, Mandiri, BRI), E-wallet (DANA, GoPay, OVO), dan QRIS. Semua pembayaran aman dan terpercaya dengan konfirmasi otomatis.'
     },
+    
     {
       question: 'Berapa lama waktu aktivasi setelah pembayaran?',
       answer: 'Aktivasi dilakukan secara instan! Setelah pembayaran dikonfirmasi, Anda akan menerima detail akun dalam waktu maksimal 5-10 menit. Untuk pembayaran di luar jam kerja, aktivasi akan dilakukan maksimal dalam 1 jam.'
     },
+    
     {
       question: 'Apakah ada garansi jika akun bermasalah?',
       answer: 'Tentu! Kami memberikan garansi penuh sesuai periode pembelian. Jika ada masalah dengan akun (suspend, tidak bisa login, dll), kami akan segera memberikan replacement akun baru atau refund 100% sesuai kebijakan.'
     },
-    {
-      question: 'Bisakah menggunakan akun di berbagai perangkat?',
-      answer: 'Ya! Netflix Premium mendukung hingga 4 layar simultan, sedangkan Spotify Premium bisa digunakan di semua perangkat Anda dengan sinkronisasi playlist. Anda bisa login di HP, tablet, laptop, Smart TV, dll.'
-    },
-    {
-      question: 'Bagaimana cara pembayaran yang tersedia?',
-      answer: 'Kami menerima berbagai metode pembayaran: Transfer Bank (BCA, BNI, BRI, Mandiri), E-wallet (OVO, DANA, GoPay, ShopeePay), QRIS, dan crypto. Semua pembayaran aman dan terpercaya.'
-    },
-    {
-      question: 'Apakah bisa request region/negara tertentu?',
-      answer: 'Ya, bisa! Untuk Netflix, kami bisa menyediakan akun dari berbagai region (US, UK, Korea, Jepang, dll) sesuai kebutuhan konten yang ingin Anda akses. Untuk Spotify, defaultnya global dengan akses ke semua musik dunia.'
-    },
-    {
-      question: 'Bagaimana jika lupa password atau perlu ganti password?',
-      answer: 'Kami akan memberikan full access ke akun termasuk email recovery. Jika ada masalah dengan password, hubungi customer service kami dan kami akan membantu reset atau memberikan akun replacement.'
-    },
+    
     {
       question: 'Apakah ada customer service 24/7?',
-      answer: 'Ya! Tim customer service kami siap membantu 24/7 melalui WhatsApp. Untuk masalah urgent, response time maksimal 15 menit. Untuk pertanyaan umum, kami akan merespon dalam 1-2 jam.'
+      answer: 'Ya! Tim customer service kami siap membantu 24/7 melalui WhatsApp dan Telegram. Respon time rata-rata kurang dari 30 menit untuk membantu segala kebutuhan Anda.'
     },
+    
+    {
+      question: 'Bisakah menggunakan akun di berbagai perangkat?',
+      answer: 'Ya bisa! Netflix Premium mendukung hingga 4 layar simultan, sedangkan Spotify Premium bisa digunakan di semua perangkat dengan sinkronisasi playlist. Anda bisa login di HP, tablet, laptop, Smart TV secara bersamaan.'
+    },
+    
     {
       question: 'Bisakah perpanjang akun sebelum expired?',
-      answer: 'Tentu! Anda bisa perpanjang akun kapan saja sebelum masa aktif habis. Kami akan memberikan notifikasi H-7 sebelum expired dan offer harga spesial untuk perpanjangan.'
+      answer: 'Tentu! Anda bisa perpanjang akun kapan saja sebelum masa aktif habis. Kami akan memberikan notifikasi H-3 sebelum expired dan offer harga spesial untuk perpanjangan dengan diskon khusus member.'
     },
+    
     {
-      question: 'Apakah tersedia paket bundle atau diskon khusus?',
-      answer: 'Ya! Kami sering memberikan promo bundle Netflix + Spotify dengan harga spesial. Follow sosial media kami untuk info promo terbaru. Ada juga diskon khusus untuk pelanggan setia dan pembelian dalam jumlah banyak.'
+      question: 'Bagaimana jika lupa password atau perlu ganti password?',
+      answer: 'Kami akan memberikan full access ke akun termasuk email recovery. Jika ada masalah password, hubungi customer service dan kami akan membantu reset atau memberikan akun replacement dalam 15 menit.'
     }
   ]
 
@@ -114,12 +108,12 @@ const FAQ = () => {
               Tim customer service kami siap membantu Anda 24/7 via WhatsApp
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-8 py-3 rounded-full hover:from-green-600 hover:to-emerald-600 transition-all duration-300 font-semibold">
+              <a href="https://wa.me/6285159616116" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-8 py-3 rounded-full hover:from-green-600 hover:to-emerald-600 transition-all duration-300 font-semibold inline-block text-center">
                 Chat WhatsApp
-              </button>
-              <button className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-3 rounded-full hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 font-semibold">
+              </a>
+              <a href="mailto:jilaann@sgbteam.id" className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-3 rounded-full hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 font-semibold inline-block text-center">
                 Kirim Email
-              </button>
+              </a>
             </div>
           </div>
         </div>

@@ -120,8 +120,8 @@ const Testimonials = () => {
         {/* Stats Section */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">1000+</div>
-            <div className="text-gray-400">Pelanggan Aktif</div>
+            <div className="text-4xl font-bold text-white mb-2">150+</div>
+            <div className="text-gray-400">Pelanggan</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-white mb-2">4.9/5</div>
@@ -146,9 +146,14 @@ const Testimonials = () => {
             <p className="text-gray-300 mb-6">
               Jangan lewatkan kesempatan untuk mendapatkan akses premium dengan harga terbaik
             </p>
-            <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 font-semibold">
+            <a 
+              href="https://wa.me/6285159616116" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 font-semibold"
+            >
               Mulai Berlangganan
-            </button>
+            </a>
           </div>
         </div>
       </div>

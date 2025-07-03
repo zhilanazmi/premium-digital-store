@@ -1,4 +1,4 @@
-import { ArrowRight, Play, Star, Shield, Zap } from 'lucide-react'
+import { ArrowRight, Play, Star, Shield, Zap, HelpCircle } from 'lucide-react'
 
 const Hero = () => {
   return (
@@ -62,10 +62,10 @@ const Hero = () => {
                 <span>Lihat Paket Harga</span>
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </a>
-              <button className="group border-2 border-purple-400 text-purple-400 px-8 py-4 rounded-full hover:bg-purple-400 hover:text-white transition-all duration-300 font-semibold flex items-center justify-center space-x-2">
-                <Play className="h-5 w-5" />
-                <span>Demo Video</span>
-              </button>
+              <a href="#faq" className="group border-2 border-purple-400 text-purple-400 px-8 py-4 rounded-full hover:bg-purple-400 hover:text-white transition-all duration-300 font-semibold flex items-center justify-center space-x-2">
+                <HelpCircle className="h-5 w-5" />
+                <span>Bantuan</span>
+              </a>
             </div>
 
             {/* Stats */}
