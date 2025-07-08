@@ -1,6 +1,41 @@
 import { Check, Star, Zap } from 'lucide-react'
 
 const Pricing = () => {
+  // Function to create WhatsApp message for Netflix plans
+  const createNetflixWhatsAppLink = (plan: any) => {
+    const message = `Halo! Saya tertarik untuk membeli Netflix Premium ${plan.duration} dengan harga ${plan.price}.
+
+📺 Paket: Netflix Premium ${plan.duration}
+💰 Harga: ${plan.price} (hemat ${plan.discount})
+🔥 Fitur: ${plan.features.join(', ')}
+
+Mohon info lebih lanjut dan cara pembayarannya. Terima kasih!`
+    
+    return `https://wa.me/6285159616116?text=${encodeURIComponent(message)}`
+  }
+
+  // Function to create WhatsApp message for Spotify plan
+  const createSpotifyWhatsAppLink = () => {
+    const message = `Halo! Saya tertarik untuk membeli Spotify Premium 1 Tahun dengan harga Rp 200.000.
+
+🎵 Paket: Spotify Premium 1 Tahun
+💰 Harga: Rp 200.000 (hemat 83%)
+🔥 Fitur: Music streaming unlimited, Audio quality lossless, Download offline, Skip lagu tanpa batas, Tanpa iklan, Akses podcast premium, Multi device sync, Garansi 1 tahun penuh
+
+Mohon info lebih lanjut dan cara pembayarannya. Terima kasih!`
+    
+    return `https://wa.me/6285159616116?text=${encodeURIComponent(message)}`
+  }
+
+  // Function to create consultation WhatsApp link
+  const createConsultationWhatsAppLink = () => {
+    const message = `Halo! Saya ingin konsultasi tentang paket streaming premium yang tersedia.
+
+Mohon bantu saya memilih paket yang sesuai dengan kebutuhan saya. Terima kasih!`
+    
+    return `https://wa.me/6285159616116?text=${encodeURIComponent(message)}`
+  }
+
   const netflixPlans = [
     {
       duration: '1 Bulan',
@@ -132,11 +167,16 @@ const Pricing = () => {
                 </ul>
 
                 {/* CTA Button */}
-                <a href="https://wa.me/6285159616116" target="_blank" rel="noopener noreferrer" className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center ${
-                  plan.popular
-                    ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600'
-                    : 'bg-white/10 text-white hover:bg-white/20 border border-purple-500/30'
-                }`}>
+                <a 
+                  href={createNetflixWhatsAppLink(plan)} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center ${
+                    plan.popular
+                      ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600'
+                      : 'bg-white/10 text-white hover:bg-white/20 border border-purple-500/30'
+                  }`}
+                >
                   Beli Sekarang
                 </a>
               </div>
@@ -194,7 +234,7 @@ const Pricing = () => {
 
               {/* CTA Button */}
               <a 
-                href="https://wa.me/6285159616116" 
+                href={createSpotifyWhatsAppLink()} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full bg-gradient-to-r from-green-500 to-emerald-500 text-white py-4 rounded-xl font-semibold hover:from-green-600 hover:to-emerald-600 transition-all duration-300 text-lg inline-block text-center"
@@ -215,7 +255,7 @@ const Pricing = () => {
               Tim kami siap membantu Anda memilih paket yang tepat sesuai kebutuhan
             </p>
             <a 
-              href="https://wa.me/6285159616116" 
+              href={createConsultationWhatsAppLink()} 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-8 py-3 rounded-full hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 font-semibold inline-block"
