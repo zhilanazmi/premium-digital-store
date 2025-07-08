@@ -64,13 +64,18 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
-            <button className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
-              isScrolled
-                ? 'bg-white/20 backdrop-blur-md text-white border border-white/30 hover:bg-white/30'
-                : 'bg-gradient-to-r from-violet-500 to-pink-500 text-white hover:from-violet-600 hover:to-pink-600'
-            }`}>
+            <a 
+              href="https://wa.me/6285159616116" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
+                isScrolled
+                  ? 'bg-white/20 backdrop-blur-md text-white border border-white/30 hover:bg-white/30'
+                  : 'bg-gradient-to-r from-violet-500 to-pink-500 text-white hover:from-violet-600 hover:to-pink-600'
+              }`}
+            >
               Beli Sekarang
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
